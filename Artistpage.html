@@ -78,7 +78,7 @@
                 <div class="heading-container">
 
                     <span>33,000,000 Monthly Listeners</span>
-                    <h1>Queen</h1>
+                    <h1 class="Artistname"></h1>
                     <div class="heading-consecutive-btns">
                         <button class="btn-play">
                             Play
@@ -120,120 +120,10 @@
             </div>
 
             <div class="row album-row row-cols-2 row-cols-md-3 row-cols-lg-6">
-                <div class="col">
-                    <div class="zoom">
-                        <img src="imagequeen/brqueen.PNG" alt="Album Image">
-                        <p class="image-name">This Is Song's Name</br>
-                            <span>Queen</span>
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="zoom">
-                        <img src="imagequeen/onAir.jpg" alt="Album Image">
-                        <p class="image-name">This Is Song's Name</br>
-                            <span>Queen</span>
-                        </p>
-                    </div>
-
-
-                </div>
-                <div class="col">
-                    <div class="zoom">
-                        <img src="imagequeen/odeon.jpg" alt="Album Image">
-                        <p class="image-name">This Is Song's Name</br>
-                            <span>Queen</span>
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="zoom">
-                        <img src="imagequeen/rainbow.jpg" alt="Album Image">
-                        <p class="image-name">This Is Song's Name</br>
-                            <span>Queen</span>
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="zoom">
-                        <img src="imagequeen/bestOf.jpg" alt="Album Image">
-                        <p class="image-name">This Is Song's Name</br>
-                            <span>Queen</span>
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="zoom">
-                        <img src="imagequeen/live at budapest.jpg" alt="Album Image">
-                        <p class="image-name">This Is Song's Name</br>
-                            <span>Queen</span>
-                        </p>
-                    </div>
-
-                </div>
+             
             </div>
 
-            <div class="row mb-5 album2-row album-row row-cols-1 row-cols-md-3 row-cols-lg-6">
-                <div class="col">
-                    <div class="zoom">
-                        <img src="imagequeen/brqueen.PNG" alt="Album Image">
-                        <p class="image-name">This Is Song's Name</br>
-                            <span>Queen</span>
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="zoom">
-                        <img src="imagequeen/onAir.jpg" alt="Album Image">
-                        <p class="image-name">This Is Song's Name</br>
-                            <span>Queen</span>
-                        </p>
-                    </div>
-
-
-                </div>
-                <div class="col">
-                    <div class="zoom">
-                        <img src="imagequeen/odeon.jpg" alt="Album Image">
-                        <p class="image-name">This Is Song's Name</br>
-                            <span>Queen</span>
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="zoom">
-                        <img src="imagequeen/rainbow.jpg" alt="Album Image">
-                        <p class="image-name">This Is Song's Name</br>
-                            <span>Queen</span>
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="zoom">
-                        <img src="imagequeen/bestOf.jpg" alt="Album Image">
-                        <p class="image-name">This Is Song's Name</br>
-                            <span>Queen</span>
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="zoom">
-                        <img src="imagequeen/live at budapest.jpg" alt="Album Image">
-                        <p class="image-name">This Is Song's Name</br>
-                            <span>Queen</span>
-                        </p>
-                    </div>
-
-                </div>
-            </div>
+           
 
 
 
@@ -295,6 +185,10 @@
 
     <!-- Optional JavaScript -->
     <script>
+        window.onload=function(){
+            onLoadArtistpage()
+          
+        }
         function selectedPage(e) {
             let d = document.querySelectorAll('.underLine')
             for (let i = 0; i < d.length; i++) {
@@ -324,6 +218,7 @@
 
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="Functions.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
