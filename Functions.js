@@ -18,7 +18,7 @@ for(let i in artists_array){
 })
 .then(response => response.json()).then(parsedJson=>{
   
-        console.log(parsedJson.data)
+        console.log('here')
     
         let artistobject = parsedJson.data[0]
     
