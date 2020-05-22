@@ -19,8 +19,8 @@ for(let i in artists_array){
         let imagesrow_ref=document.querySelector('.rowimages')
         let content=`   <div class="col" onclick="window.location.href='Artistpage.html'">
         <div class="animationContainer">
-            <img class="img-fluid imageAnimation" src="${artistimage.artist.picture}" alt="">
-                <p class="infoImg">I Love Queen</p>      
+            <img class="img-fluid imageAnimation imageMargin" src="${artistimage.artist.picture_medium}" alt="">
+                <p class="infoImg">${artistimage.artist.name}</p>      
                 <div class="middle">
                     <div class="text"><i class="fas fa-play-circle playIcon"></i></div>
                 </div>

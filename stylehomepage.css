@@ -674,3 +674,8 @@ body.homepage {
         padding: 25%;
         border-radius: 50%;
       }
+
+      .imageMargin{
+        width: 300px;
+        padding: 10px;
+      }
