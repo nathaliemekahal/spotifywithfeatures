@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="stylehomepage.css" />
+    <link rel="stylesheet" type="text/css" href="css/Artistpagestyle.css" />
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+    <title>Spotify Project</title>
+  </head>
+  <body>
+  
+ <div class="row">
+<!-- SIDE NAVBAR -->
+<div class="navcolor  col-md-2">
+    <nav id="side-nav" class="side-nav-class" role="navigation">
+        <div>
+            <div class="logo-class"><img src="imgs/spotify_logo.png" alt="spotify logo" width="120px"></div>
+            <ul>
+                <li>
+                    <div class="sideNavLine d-none"></div>
+                    <div class="sidenav-icons">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div>
+                        <a class="ml-2" onclick="sideSelectNav(event)" href="homepage.html">Home</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="sideNavLine d-none"></div>
+                    <div class="sidenav-icons">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div>
+                        <a class="ml-2" onclick="sideSelectNav(event)" href="#">Search</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="sideNavLine d-none"></div>
+                    <div class="sidenav-icons">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div>
+                        <a class="ml-2" onclick="sideSelectNav(event)" href="#">Library</a>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="bottomlist pb-5">
+            <ul class="bottom-ul" >
+                <li id="Installnow"style="border-bottom:#9A9A9A 2px solid;"><i class="fas fa-download pr-3 pl-2"></i><span>
+                    Install App
+                </span></li>
+                <li class="bottom-li"><img src="imgs/girlclipart.png" alt="clipart" width="30px" class="pt-2">
+                <div class="pl-2">Username</div></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- ALbums Section-->
+<div class="col-md-12 col-lg-10">
+<div class="row top-heading d-flex justify-content-center">
+    <!-- heading -->
+    <div class="heading-container">
+    
+        <span>33,000,000 Monthly Listeners</span>
+            <h1>Queen</h1>
+            <div class="heading-consecutive-btns">
+                <button class="btn-play">
+                    Play
+                </button>
+                <button class="btn-follow">
+                    Follow
+                </button>
+                <button class="btn-threedots">
+                    ...
+                </button>
+                
+            </div>
+            <!-- End Heading -->
+            <!-- upper nav -->
+            <div class="upper-nav-bar-wrapper">
+                <ul class="upper-nav-bar">
+                    <li>
+                        <a class="nav-link selectOff" onclick="selectedPage(event)" href="#">Overview</a>
+                        <div class="underLine d-block"></div>
+                    </li>
+                    <li>
+                        <a class="nav-link selectOff" onclick="selectedPage(event)" href="#">Related Artists</a>
+                        <div class="underLine d-none"></div>
+                    </li>
+                    <li>
+                        <a class="nav-link selectOff" onclick="selectedPage(event)" href="#">About</a>
+                        <div class="underLine d-none"></div>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- End upper nav -->
+        </div>
+    
+    
+</div>
+    <div class="Title-class pb">
+        <h3>Albums</h3>
+    </div>
+    
+        <div class="row album-row row-cols-2 row-cols-md-3 row-cols-lg-6">
+            <div class="col">
+                <div class="zoom">
+                    <img src="imagequeen/brqueen.PNG" alt="Album Image">
+                    <p class="image-name">This Is Song's Name</br>
+                        <span>Queen</span>
+                    </p>
+                </div> 
+                
+            </div>
+            <div class="col">
+                <div class="zoom">
+                    <img src="imagequeen/onAir.jpg" alt="Album Image">
+                    <p class="image-name">This Is Song's Name</br>
+                        <span>Queen</span>
+                    </p>
+                </div>
+                
+               
+            </div>
+            <div class="col">
+                <div class="zoom">
+                    <img src="imagequeen/odeon.jpg" alt="Album Image">
+                    <p class="image-name">This Is Song's Name</br>
+                        <span>Queen</span>
+                    </p>
+                </div>
+                
+            </div>
+            <div class="col">
+                <div class="zoom">
+                    <img src="imagequeen/rainbow.jpg" alt="Album Image">
+                    <p class="image-name">This Is Song's Name</br>
+                        <span>Queen</span>
+                    </p>
+                </div>
+                
+            </div>
+            <div class="col">
+                <div class="zoom">
+                    <img src="imagequeen/bestOf.jpg" alt="Album Image">
+                    <p class="image-name">This Is Song's Name</br>
+                        <span>Queen</span>
+                    </p>
+                </div>
+                
+            </div>
+            <div class="col">
+                <div class="zoom">
+                    <img src="imagequeen/live at budapest.jpg" alt="Album Image">
+                    <p class="image-name">This Is Song's Name</br>
+                        <span>Queen</span>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="row mb-5 album2-row album-row row-cols-1 row-cols-md-3 row-cols-lg-6">
+            <div class="col">
+                <div class="zoom">
+                    <img src="imagequeen/brqueen.PNG" alt="Album Image">
+                    <p class="image-name">This Is Song's Name</br>
+                        <span>Queen</span>
+                    </p>
+                </div> 
+                
+            </div>
+            <div class="col">
+                <div class="zoom">
+                    <img src="imagequeen/onAir.jpg" alt="Album Image">
+                    <p class="image-name">This Is Song's Name</br>
+                        <span>Queen</span>
+                    </p>
+                </div>
+                
+               
+            </div>
+            <div class="col">
+                <div class="zoom">
+                    <img src="imagequeen/odeon.jpg" alt="Album Image">
+                    <p class="image-name">This Is Song's Name</br>
+                        <span>Queen</span>
+                    </p>
+                </div>
+                
+            </div>
+            <div class="col">
+                <div class="zoom">
+                    <img src="imagequeen/rainbow.jpg" alt="Album Image">
+                    <p class="image-name">This Is Song's Name</br>
+                        <span>Queen</span>
+                    </p>
+                </div>
+                
+            </div>
+            <div class="col">
+                <div class="zoom">
+                    <img src="imagequeen/bestOf.jpg" alt="Album Image">
+                    <p class="image-name">This Is Song's Name</br>
+                        <span>Queen</span>
+                    </p>
+                </div>
+                
+            </div>
+            <div class="col">
+                <div class="zoom">
+                    <img src="imagequeen/live at budapest.jpg" alt="Album Image">
+                    <p class="image-name">This Is Song's Name</br>
+                        <span>Queen</span>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+  
+   
+
+</div>
+<!-- Function Bar -->
+<div class="function-bar row">
+  
+    <div class="first-section col-4">
+            <img src="imgs/bottompic.PNG" alt="Error loading pic" width="50px" >
+        
+        <div class="playing-song">
+            <p>Song for my father</p>
+            <span class="songslist-span">Horace Silver</span>
+        </div>
+        <div class="functions-icons">
+            <i class="far fa-heart mr-3"></i>
+            <i class="fas fa-save"></i>
+        </div>
+    </div>
+
+    <div class="second-section col-sm-12 col-lg-4 justify-content-center">
+        <div class="second-section-icons justify-content-center">
+            <i class="fas fa-random" data-toggle="tooltip" data-placement="top" title="Shuffle"></i>
+            <i class="fas fa-backward ml-2" data-toggle="tooltip" data-placement="top" title="Backward"></i>
+            <i class="far fa-play-circle ml-2" data-toggle="tooltip" data-placement="top" title="Play"></i>
+            <i class="fas fa-forward ml-2" data-toggle="tooltip" data-placement="top" title="forward"></i>
+            <i class="fas fa-redo-alt ml-2" data-toggle="tooltip" data-placement="top" title="Repeat"></i>
+        </div>
+        <div class="custom-progress-bar mt-1">
+            <span class="mr-2">0:00</span>
+            <div class="horizontal-line ">
+            </div>
+            <span class="ml-2">7:00</span>
+    </div>
+
+    </div>
+    <div class="third-section col-4 d-flex justify-content-end">
+        <div class="third-section-icons">
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-headphones"></i>
+            <i class="fas fa-volume-down"></i>
+        </div>
+        <div class="thirdsection-horizontal-line ml-1">
+
+        </div>
+
+    </div>
+    
+</div>
+
+
+
+
+
+
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <script>
+          function selectedPage(e) {
+            let d = document.querySelectorAll('.underLine')
+            for (let i = 0; i < d.length; i++) {
+                d[i].classList.replace('d-block', 'd-none')
+            }
+            // all the underlines are now d-none
+            let anchorSelected = e.currentTarget
+            // the a we clicked
+            let divWithUnderline = anchorSelected.parentElement.querySelector('.underLine')
+
+            // and now we replace the class
+            divWithUnderline.classList.replace("d-none", 'd-block')
+        }
+        function sideSelectNav(e) {
+            let d = document.querySelectorAll('.sideNavLine')
+            for (let j = 0; j < d.length; j++) {
+                d[j].classList.replace('d-block', 'd-none')
+            }
+            let anchorSelected = e.currentTarget
+            console.log(anchorSelected)
+            console.log(anchorSelected.parentElement.parentElement)
+            let divWithSideLine = anchorSelected.parentElement.parentElement.querySelector('.sideNavLine')
+            console.log(divWithSideLine)
+            divWithSideLine.classList.replace("d-none", 'd-block')
+        }
+        // window.onload=function(){
+        // let upper_nav_ref=document.querySelectorAll('.upper-nav-bar>li')
+        // for(let i=0;i<upper_nav_ref.length;i++){
+        //     upper_nav_ref[i].addEventListener('click',function(e){
+        //         console.log('here')
+        //         let selecteditem=e.currentTarget
+        //         console.log(selecteditem)
+        //         selecteditem.classList.toggle('selected')
+        //     })
+        //     }
+           
+        // }
+        
+        
+        
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

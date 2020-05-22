@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylehomepage.css">
+    <link rel="stylesheet" href="common.css">
+    
+    <title>Home Page | Spotify</title>
+</head>
+
+<body class="homepage">
+    <!-- SIDE NAVBAR -->
+    <div class="col-2 leftCol" style="background-color: #040404;">
+        <nav id="side-nav" class="side-nav-class side-nav-bar" role="navigation">
+            <div>
+                <div class="logo-class pl-2"><img src="imgs/spotify_logo.png" alt="spotify logo" width="100px"></div>
+                <ul>
+                    <li>                       
+                        <div class="sideLine d-block"></div>
+                        <div class="sidenav-icons">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div>
+                            <a class="ml-2"onclick="sideClick(event)" href="#">Home</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sideLine d-none"></div>
+                        <div class="sidenav-icons">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div>
+                            <a class="ml-2" onclick="sideClick(event)" href="#">Search</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sideLine d-none"></div>
+                        <div class="sidenav-icons">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div>
+                            <a class="ml-2" onclick="sideClick(event)" href="#">Library</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="pb-5">
+                <ul class="bottom-ul">
+                    
+                        <button type="button" class="btn btn-light py-1 styleBtnLight" style="width: 100%;">SIGN UP</button>
+                    
+                    
+                        <button type="button" class="btn btn-dark my-1 py-1 styleBtn"style="width: 100%;" onclick="window.location.href='index.html'">LOGIN</button>
+                   <div class="footer-spans">
+                    <li class="aling-span">
+                        <span class="side-bar-footer">Cookie</span><span class="side-bar-footer">|</span><span
+                            class="side-bar-footer">Privacy </span>
+                    </li>
+                    <li id ="policy"class="aling-span">
+                        <span class="side-bar-footer">Policy</span>
+                    </li>
+                </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="upperbar-wrapper pb-4">
+        <div class="row d-flex justify-content-center">
+            <ul class="list-group list-group-horizontal nav">
+                <li class="nav-item topBar">
+                    <div class="col">
+                        <a class="nav-link listOfPages" onclick="styleClick(event)" href="#">TRENDING</a>
+                        <div class='underLine d-block'> </div>
+                    </div>
+                </li>
+                <li class="nav-item topBar">
+                    <div class="col">
+                        <a class="nav-link listOfPages" onclick="styleClick(event)" href="#">PODCAST</a>
+                        <div class='underLine d-none'></div>
+                    </div>
+                </li>
+                <li class="nav-item topBar">
+                    <div class="col">
+                        <a class="nav-link listOfPages" onclick="styleClick(event)" href="#">MOODS AND GENRES</a>
+                        <div class='underLine d-none'></div>
+                    </div>
+                </li>
+                <li class="nav-item topBar">
+                    <div class="col">
+                        <a class="nav-link listOfPages" onclick="styleClick(event)" href="#">NEW REALEASES</a>
+                        <div class='underLine d-none'></div>
+                    </div>
+                </li>
+                <li class="nav-item topBar">
+                    <div class="col">
+                        <a class="nav-link listOfPages" onclick="styleClick(event)" href="#">DISCOVER</a>
+                        <div class='underLine d-none'></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <h1 class="tbt">#THROWBACKTHURSDAY</h1>
+    </div>
+
+    <div class="row images-row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 justify-content-center ">
+        <div class="col" onclick="window.location.href='Artistpage.html'">
+            <div class="animationContainer">
+                <img class="img-fluid imageAnimation" src="img/freddie.jpg" alt="">
+                    <p class="infoImg">I Love Queen</p>      
+                    <div class="middle">
+                        <div class="text"><i class="fas fa-play-circle playIcon"></i></div>
+                    </div>
+            </div>
+    </div>
+        <div class="col">
+            <div class="animationContainer">
+                <img class="img-fluid imageAnimation" src="img/liricisti.jpg" alt="" onclick="window.location.href='Artistpage.html'">
+                <p class="infoImg">Lyricists</p>
+                <div class="middle">
+                    <div class="text"><i class="fas fa-play-circle playIcon"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="animationContainer">
+                <img class="img-fluid imageAnimation" src="img/italia.jpg" alt="" onclick="window.location.href='Artistpage.html'">
+                <p class="infoImg">Italy's Frequent Rotation</p>
+                <div class="middle">
+                    <div class="text"><i class="fas fa-play-circle playIcon"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="animationContainer">
+                <img class="img-fluid imageAnimation" src="img/00s Italia.jpg" alt="" onclick="window.location.href='Artistpage.html'">
+                <p class="infoImg">00s Italy</p>
+                <div class="middle">
+                    <div class="text"><i class="fas fa-play-circle playIcon"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="animationContainer">
+                <img class="img-fluid imageAnimation" src="img/aperitivo.jpg" alt="" onclick="window.location.href='Artistpage.html'">
+                <p class="infoImg">Cocktail Hour</p>
+                <div class="middle">
+                    <div class="text"><i class="fas fa-play-circle playIcon"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="animationContainer">
+                <img class="img-fluid imageAnimation" src="img/90s hip-hop.jpg" alt="" onclick="window.location.href='Artistpage.html'">
+                <p class="infoImg">I Love My '90s Hip-Hop</p>
+                <div class="middle">
+                    <div class="text"><i class="fas fa-play-circle playIcon"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <h1 class="tbt">Classifiche</h1>
+    </div>
+    <div class="row images-row justify-content-center">
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="animationContainer">
+                <img class="img-fluid imageAnimation" src="img/topItaly.jpg" alt="" style="width:100%">
+                <p class="infoImg">Top 50 - Italy</p>
+                <div class="middle">
+                    <div class="text"><i class="fas fa-play-circle playIcon"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="animationContainer">
+                <img class="img-fluid imageAnimation" src="img/topGlobal .jpg" alt="">
+                <p class="infoImg">Top 50 - Global</p>
+                <div class="middle">
+                    <div class="text"><i class="fas fa-play-circle playIcon"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="animationContainer">
+                <img class="img-fluid imageAnimation" src="img/viralGlo.jpg" alt="">
+                <p class="infoImg">Viral 50 - Global</p>
+                <div class="middle">
+                    <div class="text"><i class="fas fa-play-circle playIcon"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="animationContainer">
+                <img class="img-fluid imageAnimation" src="img/viralIt.jpg" alt="">
+                <p class="infoImg">Viral 50 - Italy</p>
+                <div class="middle">
+                    <div class="text"><i class="fas fa-play-circle playIcon"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+
+        </div>
+    </div>
+
+    <div class="function-bar">
+        <div style="display: flex; justify-content: center;  width: 83%;">
+            <div class="second-section ">
+                <div class="second-section-icons">
+                    <i class="fas fa-random" data-toggle="tooltip" data-placement="top" title="Shuffle"></i>
+                    <i class="fas fa-backward ml-1" data-toggle="tooltip" data-placement="top" title="Backward"></i>
+                    <i class="far fa-play-circle ml-1" data-toggle="tooltip" data-placement="top" title="Play"></i>
+                    <i class="fas fa-forward ml-1" data-toggle="tooltip" data-placement="top" title="forward"></i>
+                    <i class="fas fa-redo-alt" data-toggle="tooltip" data-placement="top" title="Repeat"></i>
+                </div>
+                <div class="custom-progress-bar mt-1">
+                    <span class="mr-2">0:00</span>
+                    <div class="horizontal-line ">
+                    </div>
+                    <span class="ml-2">7:00</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="third-section">
+            <div class="third-section-icons">
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-volume-down"></i>
+            </div>
+            <div class="thirdsection-horizontal-line ml-1">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function styleClick(e) {
+            let d = document.querySelectorAll('.underLine')
+            for (let i = 0; i < d.length; i++) {
+                d[i].classList.replace('d-block', 'd-none')
+            }
+            // all the underlines are now d-none
+            let anchorSelected = e.currentTarget
+            // the a we clicked
+            let divWithUnderline = anchorSelected.parentElement.querySelector('.underLine')
+            
+            // and now we replace the class
+            divWithUnderline.classList.replace("d-none", 'd-block')
+        }
+
+        function sideClick(e) {
+            let d = document.querySelectorAll('.sideLine')
+            for (let j = 0; j < d.length; j++) {
+                d[j].classList.replace('d-block', 'd-none')
+            }
+            let anchorSelected = e.currentTarget
+            console.log(anchorSelected)
+            console.log(anchorSelected.parentElement.parentElement)
+            let divWithSideLine = anchorSelected.parentElement.parentElement.querySelector('.sideLine')
+            console.log(divWithSideLine)
+            divWithSideLine.classList.replace("d-none", 'd-block')
+        }
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

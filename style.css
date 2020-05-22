@@ -1,0 +1,305 @@
+body {
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* ULTIMATE WAY TO CENTER IMAGE IN CSS UGHHHHH */
+
+.spotify-logo > * {
+    max-height: 93px;
+    padding-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.container {
+     text-align: center;
+}
+
+/* FACEBOOK BUTTON ---------------------------------- */
+
+.azm-pill {
+     width: 480px;
+    font-weight: 700;
+    letter-spacing: 2px;
+     text-align: center;
+     -moz-border-radius: 500px; 
+     -webkit-border-radius: 500px; 
+     border-radius: 500px;
+}
+
+.azm-facebook { 
+     background: #4862a3; 
+     color: white;
+}
+
+/* APPLE BUTTON ---------------------------------------*/
+
+.azm-pill {
+     width: 480px;
+    font-weight: 700;
+    letter-spacing: 2px;
+     text-align: center;
+     -moz-border-radius: 500px; 
+     -webkit-border-radius: 500px; 
+     border-radius: 500px;
+}
+
+.azm-apple { 
+     background: hsl(0, 0%, 0%); 
+     color: white;
+}
+
+/* DIVIDER ------------------------------*/
+
+h2 {
+     width: 100%; 
+     text-align: center; 
+     border-bottom: 1px solid rgb(168, 168, 168); 
+     line-height: 0.1em;
+     margin: 10px 0 20px;
+     font-size: 1rem; 
+  } 
+  
+  h2 span { 
+     background-color: white;
+     padding:0 10px;
+  }
+
+/* LOGIN PASSWORD -----------------------*/
+
+.enter col-xs-12 py-2 {
+     display: block;
+     margin-left: auto;
+     margin-right: auto; 
+}
+
+.kpx_login .kpx_loginOr {
+	position: relative;
+	font-size: 1.5em;
+	color: #aaa;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.kpx_login .kpx_loginOr .kpx_hrOr {
+	background-color: #cdcdcd;
+	height: 1px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.kpx_login .kpx_loginOr .kpx_spanOr {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: -0.6em;
+	background-color: white;
+	width: 3em;
+     text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+}			
+
+.kpx_login .kpx_loginForm .input-group.i {
+	width: 2em;
+}
+.kpx_login .kpx_loginForm  .help-block {
+    color: red;
+}
+
+	
+@media (min-width: 768px) {
+    .kpx_login .kpx_forgotPwd {
+        text-align: right;
+		margin-top:10px;
+ 	}		
+}
+
+
+/* SIGN IN BUTTON ---------------------------------------*/
+
+.azm-pill {
+     display: block;
+     margin-left: auto;
+     margin-right: auto; 
+    width: 450px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    -moz-border-radius: 500px; 
+    -webkit-border-radius: 500px; 
+    border-radius: 500px;
+}
+
+.azm-signin { 
+     background: hsl(141, 73%, 42%); 
+     color: white;
+}
+
+
+/* REMEMBER ME --------------------------*/
+
+.rememberme-button-wrapper{
+     display: flex;
+     justify-content: space-between;
+     
+     
+}
+.login-btn{
+     display: block;
+     width: 180px;
+     font-weight: 700;
+     letter-spacing: 2px;
+     text-align: center;
+     -moz-border-radius: 500px; 
+     -webkit-border-radius: 500px; 
+     border-radius: 500px;
+}
+
+
+/* check box-----------------------------*/
+
+   
+body {
+     height: 100vh;
+     padding: 0;
+     margin: 0;
+   }
+   
+   .bg {
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+   }
+   
+   .span_pseudo, .chiller_cb span:before, .chiller_cb span:after {
+     content: "";
+     display: inline-block;
+     background: #fff;
+     width: 0;
+     height: 0.2rem;
+     position: absolute;
+     transform-origin: 0% 0%;
+   }
+   
+   .chiller_cb {
+     position: relative;
+     display: flex;
+     align-items: center;
+   }
+   .chiller_cb input {
+     display: none;
+   }
+   .chiller_cb input:checked ~ span {
+     background: hsl(141, 73%, 42%);
+     border-color: hsl(141, 73%, 42%);
+     border-width: 5px;
+     border-radius: 5px;
+   }
+   .chiller_cb input:checked ~ span:before {
+     width: 1rem;
+     height: 0.15rem;
+     transition: width 0.1s;
+     transition-delay: 0.3s;
+   }
+   .chiller_cb input:checked ~ span:after {
+     width: 0.4rem;
+     height: 0.15rem;
+     transition: width 0.1s;
+     transition-delay: 0.2s;
+   }
+   .chiller_cb input:disabled ~ span {
+     background: #ececec;
+     border-color: #dcdcdc;
+   }
+   .chiller_cb input:disabled ~ label {
+     color: #dcdcdc;
+   }
+   .chiller_cb input:disabled ~ label:hover {
+     cursor: default;
+   }
+   .chiller_cb label {
+     padding-left: 2rem;
+     position: relative;
+     z-index: 2;
+     cursor: pointer;
+     margin-bottom:0;
+   }
+   .chiller_cb span {
+     display: inline-block;
+     width: 1.2rem;
+     height: 1.2rem;
+     border: 2px solid #ccc;
+     position: absolute;
+     left: 0;
+     transition: all 0.2s;
+     z-index: 1;
+     box-sizing: content-box;
+   }
+   .chiller_cb span:before {
+     transform: rotate(-55deg);
+     top: 1rem;
+     left: 0.37rem;
+   }
+   .chiller_cb span:after {
+     transform: rotate(35deg);
+     bottom: 0.35rem;
+     left: 0.2rem;
+   }
+   
+
+
+
+
+/* APPLE BUTTON ---------------------------------------*/
+
+.signup-pill {
+     width: 450px;
+    font-weight: 700;
+    letter-spacing: 2px;
+     text-align: center;
+     -moz-border-radius: 500px; 
+     -webkit-border-radius: 500px; 
+     border-radius: 500px;
+}
+
+.signup-apple { 
+     background: hsl(0, 0%, 100%); 
+     color: hsl(210, 3%, 39%);
+     border: 2px solid hsl(210, 3%, 39%);
+}
+
+/*------------------------------------------------*/
+
+p {
+     margin-top: 0;
+     margin-bottom: 1rem;
+     font-size: 10px;
+ }
+
+
+
+a {
+    color: hsl(141, 73%, 42%);
+    font-size: 20px;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px;
+}
+
+/*------------------------------------------------*/
+
+
+@media screen and (max-width:992px) {
+    .azm-pill{
+      width: 100%;
+      margin: 0 auto;
+    }
+    .signup-pill{
+      width: 100%;
+      margin: 0 auto;
+    }
+}
