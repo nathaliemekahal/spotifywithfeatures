@@ -10,6 +10,7 @@ body.homepage {
 
 
 }
+
 .side-nav-class ul{
   margin-top: -27px
 }
@@ -673,4 +674,9 @@ body.homepage {
         background-color: rgba(0, 0, 0, 0.5);
         padding: 25%;
         border-radius: 50%;
+      }
+
+      .imageMargin{
+        width: 300px;
+        padding: 10px;
       }
