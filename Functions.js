@@ -1,7 +1,10 @@
 
 var imagestobedisplayed=[]
 var albumnames=[];
+var albumtracklist=[]
 var artistname
+
+
 
 function onLoadHomePage(){
 
@@ -20,7 +23,7 @@ for(let i in artists_array){
 })
 .then(response => response.json()).then(parsedJson=>{
   
-        console.log('here')
+ 
     
         let artistobject = parsedJson.data[0]
     
@@ -68,15 +71,16 @@ function onLoadArtistpage(){
 
         parsedJson.data.forEach(albumObj=>{
             let albumsrow_ref=document.querySelector('.album-row')
+            console.log(albumObj)
  
     if(!imagestobedisplayed.includes(albumObj.album.cover)){
         imagestobedisplayed.push(albumObj.album.cover)
         albumnames.push(albumObj.album.title)
+        console.log(albumObj.album.tracklist)
+        albumtracklist.push(albumObj.album.tracklist)
       
     }
-    else{
-        console.log('included')
-    }
+  
 
  
  } )
@@ -91,24 +95,37 @@ function displayAlbums(albumcoversArray){
  
     
    let albumsrow_ref=document.querySelector('.album-row')
-   console.log(albumcoversArray)
+  
     for(let i in albumcoversArray){
         
     let content=` <div class="col">
     <div class="zoom">
-        <img src="${albumcoversArray[i]}" alt="Album Image">
+        <img src="${albumcoversArray[i]}" alt="Album Image"  onclick="window.location.href='album.html?tracklist=${albumtracklist[i]}'">
         <p class="image-name">${albumnames[i]}</br>
             <span>${artistname}</span>
         </p>
     </div>
 
 </div>`
+
 let newAlbumImg=document.createElement('div')
 newAlbumImg.innerHTML=content
 albumsrow_ref.appendChild(newAlbumImg)
 
     }
+    console.log('this is track list',albumtracklist)
+ 
+    
   
+}
+
+function onLoadAlbumpage(){
+    
+    let urlparam=new URLSearchParams(window.location.search)
+    albumtracklist=urlparam.get('tracklist')
+    console.log(albumtracklist)
+   
+
 }
 
 
