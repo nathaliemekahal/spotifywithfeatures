@@ -12,13 +12,25 @@ for(let i in artists_array){
     }
 })
 .then(response => response.json()).then(parsedJson=>{
-    console.log(parsedJson.data[0].artist.picture)
-    // let songslistcontainer_ref=document.querySelector('#songs-class-container')
-    // parsedJson.data.forEach(Object=>{
+        console.log(parsedJson.data)
 
-    //     createSongElement(Object)
+    
+        let artistimage = parsedJson.data[0]
+        let imagesrow_ref=document.querySelector('.rowimages')
+        let content=`   <div class="col" onclick="window.location.href='Artistpage.html'">
+        <div class="animationContainer">
+            <img class="img-fluid imageAnimation" src="${artistimage.artist.picture}" alt="">
+                <p class="infoImg">I Love Queen</p>      
+                <div class="middle">
+                    <div class="text"><i class="fas fa-play-circle playIcon"></i></div>
+                </div>
+                </div>
+            </div>`
+        let newimagediv=this.document.createElement('div')
+        newimagediv.innerHTML=content
+        imagesrow_ref.appendChild(newimagediv)
 
-    // })
+    //})
 })
 .catch(err => {
     console.log(err);
