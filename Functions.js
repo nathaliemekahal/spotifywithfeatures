@@ -1,5 +1,7 @@
 
 var imagestobedisplayed=[]
+var albumnames=[];
+var artistname
 
 function onLoadHomePage(){
 
@@ -26,7 +28,7 @@ for(let i in artists_array){
         let content=`   <div class="col" onclick="window.location.href='Artistpage.html?artistname=${artistobject.artist.name}'">
         <div class="animationContainer">
             <img class="img-fluid imageAnimation imageMargin" src="${artistobject.artist.picture_medium}">
-                <p class="infoImg">I Love Queen</p>      
+                <p class="infoImg">${artistobject.artist.name}</p>      
                 <div class="middle">
                     <div class="text"><i class="fas fa-play-circle playIcon"></i></div>
                 </div>
@@ -69,6 +71,7 @@ function onLoadArtistpage(){
  
     if(!imagestobedisplayed.includes(albumObj.album.cover)){
         imagestobedisplayed.push(albumObj.album.cover)
+        albumnames.push(albumObj.album.title)
       
     }
     else{
@@ -77,7 +80,7 @@ function onLoadArtistpage(){
 
  
  } )
-displayAlbums(imagestobedisplayed)
+displayAlbums(imagestobedisplayed,albumnames)
         
 })
 .catch(err => {
@@ -88,12 +91,14 @@ function displayAlbums(albumcoversArray){
  
     
    let albumsrow_ref=document.querySelector('.album-row')
+   console.log(albumcoversArray)
     for(let i in albumcoversArray){
+        
     let content=` <div class="col">
     <div class="zoom">
         <img src="${albumcoversArray[i]}" alt="Album Image">
-        <p class="image-name">This Is Song's Name</br>
-            <span>Queen</span>
+        <p class="image-name">${albumnames[i]}</br>
+            <span>${artistname}</span>
         </p>
     </div>
 
