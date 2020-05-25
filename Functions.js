@@ -251,7 +251,7 @@ function createsearchDiv(){
             let filteredlist=loadedsongs.filter(song=>song.artist.name.toLowerCase().includes(inputsearch))
             filteredlist.forEach(CurrentObj=>{
                 console.log(CurrentObj)
-            cardscontainer.innerHTML+=` <div class="col" onclick="window.location.href='album.html?albumId=${CurrentObj.album.id}&albumcover=${CurrentObj.album.cover_medium}'">
+            cardscontainer.innerHTML+=` <div class="col" onclick="window.location.href='album.html?albumId=${CurrentObj.album.id}&albumcover=${CurrentObj.album.cover_medium}&albumname=${CurrentObj.album.title}'">
             <div class="animationContainer">
                 <img class="img-fluid imageAnimation imageMargin" src="${CurrentObj.album.cover_medium}">
                 <p class="infoImg">${CurrentObj.album.title}</p>  
