@@ -248,9 +248,10 @@ function createsearchDiv(){
             body_ref.appendChild(cardscontainer)
            
             
-            let filteredlist=loadedsongs.filter(song=>song.title.toLowerCase().includes(inputsearch))
+            let filteredlist=loadedsongs.filter(song=>song.artist.name.toLowerCase().includes(inputsearch))
             filteredlist.forEach(CurrentObj=>{
-            cardscontainer.innerHTML+=` <div class="col">
+                console.log(CurrentObj)
+            cardscontainer.innerHTML+=` <div class="col" >
             <div class="animationContainer">
                 <img class="img-fluid imageAnimation imageMargin" src="${CurrentObj.album.cover_medium}">
                 <p class="infoImg">${CurrentObj.album.title}</p>  
@@ -259,11 +260,12 @@ function createsearchDiv(){
                         <div class="text"><i class="fas fa-play-circle playIcon"></i></div>
                     </div>
                     </div>
-                </div>`})
+                </div>`
+        })
 
             
            
-          console.log(loadedsongs)
+        //   console.log(loadedsongs)
     
             
          
