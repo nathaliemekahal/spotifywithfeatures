@@ -29,7 +29,7 @@
                             <a class="ml-2"onclick="sideClick(event)" href="#">Home</a>
                         </div>
                     </li>
-                    <li>
+                    <li id='search' onclick="createsearchDiv()">
                         <div class="sideLine d-none"></div>
                         <div class="sidenav-icons">
                             <i class="fas fa-search"></i>
@@ -38,8 +38,12 @@
                             <a class="ml-2" onclick="sideClick(event)" href="#">Search</a>
                         </div>
                     </li>
+                    <li id='userinput' class="d-none">
+                        <input type="text" id="userinputsearch" >
+                    </li>
                     <li>
                         <div class="sideLine d-none"></div>
+
                         <div class="sidenav-icons">
                             <i class="fas fa-book-open"></i>
                         </div>
@@ -113,7 +117,7 @@
         
         <div class="row row-cols-5 rowimages"  style="margin-left: 190px !important; margin-bottom:300px !important;"></div>
     
-
+        <div class="row row-cols-5 cardscontainer"  style="margin-left: 190px !important; margin-bottom:300px !important;"></div>
             
     
 
@@ -185,6 +189,7 @@
             let divWithSideLine = anchorSelected.parentElement.parentElement.querySelector('.sideLine')
             console.log(divWithSideLine)
             divWithSideLine.classList.replace("d-none", 'd-block')
+            createsearchDiv()
         }
     </script>
    
